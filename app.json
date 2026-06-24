@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Mefobe Marketing",
+    "slug": "mefobe-marketing",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "android": {
+      "package": "cm.mefobemarketing",
+      "permissions": [
+        "INTERNET",
+        "VIBRATE",
+        "POST_NOTIFICATIONS",
+        "RECEIVE_BOOT_COMPLETED",
+        "FOREGROUND_SERVICE",
+        "WAKE_LOCK",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "cm.mefobemarketing",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "fetch",
+          "processing"
+        ]
+      }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#E91E8C",
+          "defaultChannel": "beauty_new_tasks"
+        }
+      ],
+      [
+        "expo-background-fetch"
+      ],
+      [
+        "expo-task-manager"
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e2686348-5abb-4bd7-b80f-7f3b9959f8d8"
+      }
+    }
+  }
+}
