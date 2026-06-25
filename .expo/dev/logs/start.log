@@ -497,3 +497,4 @@
 {"_e":"env:load","_t":1782408525180,"mode":"development","files":[],"env":{}}
 {"_e":"devserver:start","_t":1782408526358,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
 {"_e":"metro:config","_t":1782408527443,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782408544572,"atlas":false,"workers":6,"host":"::","port":8081}
