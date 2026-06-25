@@ -39,7 +39,9 @@
       ],
       [
         "expo-task-manager"
-      ]
+      ],
+      "expo-font",
+      "expo-status-bar"
     ],
     "extra": {
       "eas": {

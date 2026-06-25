@@ -18,8 +18,8 @@ import {
 } from '../services/BackgroundTaskService';
 
 export default function SettingsScreen() {
-  const [url,        setUrl]        = useState('https://votre-odoo.cm');
-  const [db,         setDb]         = useState('beauty_db');
+  const [url,        setUrl]        = useState('https://www.monsalon.cm');
+  const [db,         setDb]         = useState('beauty');
   const [user,       setUser]       = useState('admin');
   const [saved,      setSaved]      = useState(false);
   const [isPolling,  setIsPolling]  = useState(false);
@@ -127,8 +127,8 @@ export default function SettingsScreen() {
         {/* Odoo Connection */}
         <Text style={s.sec}>🌐 Connexion Odoo</Text>
         {([
-          ['URL Serveur',    url,  setUrl,  'https://odoo.monsalon.cm'],
-          ['Base de données',db,   setDb,   'beauty_db'],
+          ['URL Serveur',    url,  setUrl,  'https://www.monsalon.cm'],
+          ['Base de données',db,   setDb,   'beauty'],
           ['Utilisateur',    user, setUser, 'admin'],
         ] as [string,string,any,string][]).map(([l,v,fn,ph]) => (
           <View key={l} style={s.inputCard}>
@@ -151,13 +151,13 @@ export default function SettingsScreen() {
         <Text style={s.sec}>🎛️ Contrôles</Text>
 
         {/* Toggle background service */}
-        <TouchableOpacity
+        {/* <TouchableOpacity
           style={[s.btn, { backgroundColor: isPolling ? '#E53935' : COLORS.green }]}
           onPress={handleTogglePolling}>
           <Text style={s.btnTxt}>
             {isPolling ? '⏹ Arrêter le service' : '▶️ Démarrer le service'}
           </Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
         {/* Manual poll */}
         <TouchableOpacity
@@ -170,14 +170,14 @@ export default function SettingsScreen() {
         </TouchableOpacity>
 
         {/* Test notification */}
-        <TouchableOpacity style={[s.btn, { backgroundColor:'#1976D2' }]} onPress={handleTestNotif}>
+        {/* <TouchableOpacity style={[s.btn, { backgroundColor:'#1976D2' }]} onPress={handleTestNotif}>
           <Text style={s.btnTxt}>🔔 Tester une Notification</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
         {/* Reset cache */}
-        <TouchableOpacity style={[s.btn, { backgroundColor:'#f5f0f5', borderWidth:1.5, borderColor:'#E53935' }]} onPress={handleResetCache}>
+        {/* <TouchableOpacity style={[s.btn, { backgroundColor:'#f5f0f5', borderWidth:1.5, borderColor:'#E53935' }]} onPress={handleResetCache}>
           <Text style={[s.btnTxt, { color:'#E53935' }]}>🗑️ Réinitialiser le Cache</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
         {/* Save */}
         <TouchableOpacity
@@ -187,7 +187,7 @@ export default function SettingsScreen() {
         </TouchableOpacity>
 
         {/* Info box */}
-        <View style={s.infoBox}>
+        {/* <View style={s.infoBox}>
           <Text style={s.infoTitle}>ℹ️ Comment ça fonctionne</Text>
           <Text style={s.infoTxt}>
             • Le service interroge Odoo toutes les 30s (app ouverte){'\n'}
@@ -196,7 +196,7 @@ export default function SettingsScreen() {
             • Notifications haute priorité avec vibration{'\n'}
             • Appuyer sur la notification ouvre la tâche directement
           </Text>
-        </View>
+        </View> */}
 
         <View style={{ height:40 }} />
       </ScrollView>

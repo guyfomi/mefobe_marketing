@@ -30,13 +30,13 @@ export default function TaskDetailScreen({ route, navigation }) {
     const ok = await markTaskDone(task.id);
     if (ok) {
       setTask(p => ({ ...p, stage_id: [0, '✅ Terminé'] }));
-      Alert.alert('✅ Succès', 'Tâche mise à jour dans Odoo !');
+      Alert.alert('✅ Succès', 'Tâche mise à jour dans la plateforme !');
     } else Alert.alert('Erreur', 'Impossible de mettre à jour.');
   };
 
   const handleOdoo = () =>
     Linking.openURL(getOdooTaskUrl(task.id))
-      .catch(() => Alert.alert('Erreur', "Impossible d'ouvrir Odoo."));
+      .catch(() => Alert.alert('Erreur', "Impossible d'ouvrir la plateforme."));
 
   if (loading) return (
     <View style={{ flex:1, alignItems:'center', justifyContent:'center' }}>
@@ -98,7 +98,7 @@ export default function TaskDetailScreen({ route, navigation }) {
               <Text style={s.doneTxt}>✅ Marquer Terminé</Text>
             </TouchableOpacity>
             <TouchableOpacity style={s.odooBtn} onPress={handleOdoo}>
-              <Text style={s.odooTxt}>🌐 Ouvrir Odoo</Text>
+              <Text style={s.odooTxt}>🌐 Gerer</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -156,7 +156,7 @@ export default function TaskDetailScreen({ route, navigation }) {
               <Text style={{ fontSize:36, marginBottom:8 }}>✨</Text>
               <Text style={{ fontWeight:'700', color:'#888' }}>Aucun message IA</Text>
               <Text style={{ color:'#bbb', fontSize:11, marginTop:4, textAlign:'center' }}>
-                Ouvrez Odoo → ✨ Générer un Message
+                Ouvrez la plateforme → ✨ Générer un Message
               </Text>
             </View>
           )}
