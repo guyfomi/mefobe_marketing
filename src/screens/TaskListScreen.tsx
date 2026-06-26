@@ -26,7 +26,7 @@ export default function TaskListScreen({ navigation }) {
       setError(null);
       setTasks(await fetchTasks());
     } catch (e) {
-      setError(e.message ?? 'Erreur connexion Odoo');
+      setError(e.message ?? 'Erreur connexion Serveur');
     } finally { setLoading(false); setRefreshing(false); }
   };
 
@@ -96,8 +96,8 @@ export default function TaskListScreen({ navigation }) {
     <SafeAreaView style={{ flex:1, backgroundColor:COLORS.primary }} edges={['top']}>
       <StatusBar barStyle="light-content" backgroundColor={COLORS.primary} />
       <LinearGradient colors={[COLORS.primary, COLORS.purple]} style={s.header}>
-        <Text style={s.h1}>💅 Beauty Marketing</Text>
-        <Text style={s.h2}>Salon Cameroun · Odoo 17</Text>
+        <Text style={s.h1}>💅 Mefobe Marketing</Text>
+        <Text style={s.h2}>Assisté par IA</Text>
         <View style={s.statsRow}>
           <View style={s.chip}><Text style={s.chipTxt}>{tasks.length} tâches</Text></View>
           <View style={[s.chip, { backgroundColor:'rgba(255,100,0,0.4)' }]}>
