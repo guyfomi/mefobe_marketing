@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ODOO_CONFIG } from '../constants';
 import { BeautyTask, AiLog } from '../types';
 
-const api = axios.create({
+export const api = axios.create({
   baseURL: ODOO_CONFIG.BASE_URL,
   headers: { 'Content-Type': 'application/json' },
   withCredentials: true,
@@ -42,7 +42,7 @@ export async function authenticate(): Promise<boolean> {
       return true;
     }
     return false;
-  } catch (e) { console.error('Odoo auth error:', e); return false; }
+  } catch (e) { console.error('Erreur authentification, veuillez verifier votre connexion et vos parametres:', e); return false; }
 }
 
 function buildBody(model, domain, fields, limit = 80,
@@ -90,3 +90,4 @@ export async function markTaskDone(taskId: number): Promise<boolean> {
 
 export const getOdooTaskUrl = (id: number) =>
   `${ODOO_CONFIG.BASE_URL}/web#model=beauty.task&id=${id}&view_type=form`;
+

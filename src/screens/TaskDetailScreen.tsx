@@ -97,6 +97,23 @@ export default function TaskDetailScreen({ route, navigation }) {
             <TouchableOpacity style={s.doneBtn} onPress={handleDone}>
               <Text style={s.doneTxt}>✅ Marquer Terminé</Text>
             </TouchableOpacity>
+            <TouchableOpacity
+              style={[s.doneBtn, {
+                backgroundColor: '#9C27B0',
+                flex: 0,
+                paddingHorizontal: 18,
+              }]}
+              onPress={() => navigation.navigate('AiMessage', {
+                taskId:       task.id,
+                taskType:     task.task_type ?? 'other',
+                customerName: (task.partner_id as any)?.[1]?.split(' ')[0] ?? '',
+                partnerPhone: task.partnerPhone,
+                partnerEmail: task.partnerEmail,
+                channel:      task.channel,
+              })}
+              >
+              <Text style={s.doneTxt}>✨ IA</Text>
+            </TouchableOpacity>
             <TouchableOpacity style={s.odooBtn} onPress={handleOdoo}>
               <Text style={s.odooTxt}>🌐 Gerer</Text>
             </TouchableOpacity>

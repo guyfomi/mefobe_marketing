@@ -93,7 +93,7 @@ export default function TaskListScreen({ navigation }) {
   };
 
   return (
-    <SafeAreaView style={{ flex:1, backgroundColor:COLORS.primary }} edges={['top']}>
+    <SafeAreaView style={{ flex:0, backgroundColor:COLORS.primary }} edges={['top']}>
       <StatusBar barStyle="light-content" backgroundColor={COLORS.primary} />
       <LinearGradient colors={[COLORS.primary, COLORS.purple]} style={s.header}>
         <Text style={s.h1}>💅 Mefobe Marketing</Text>
@@ -182,7 +182,7 @@ const s = StyleSheet.create({
   aiBadge:   { backgroundColor:'#E8F5E9', borderRadius:10,
                paddingHorizontal:8, paddingVertical:2 },
   aiTxt:     { fontSize:10, fontWeight:'800', color:'#2E7D32' },
-  center:    { flex:1, alignItems:'center', justifyContent:'center', padding:20 },
+  center:    { flex:1, alignItems:'center', justifyContent:'center', padding:20 },  
   retry:     { backgroundColor:'#E91E8C', borderRadius:10,
                paddingHorizontal:24, paddingVertical:10 },
 });

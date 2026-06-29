@@ -535,3 +535,155 @@
 {"_e":"metro:client_log","_t":1782410207621,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
 {"_e":"metro:client_log","_t":1782410207702,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
 {"_e":"metro:client_log","_t":1782410207775,"level":"log","data":["[BackgroundTaskService] Already registered"]}
+{"_e":"root:init","_t":1782478117252,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782478117256,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782478117269,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782478119526,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782478121568,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782478161169,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"root:init","_t":1782478734314,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782478734317,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782478734327,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782478735865,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782478737342,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782478767475,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1782482219174,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1782482219175,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782482219195,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782482219309,"id":"1","progress":0.06479338842975205,"total":55,"current":14}
+{"_e":"metro:bundling:progress","_t":1782482219408,"id":"1","progress":0.06479338842975205,"total":188,"current":34}
+{"_e":"metro:bundling:progress","_t":1782482219509,"id":"1","progress":0.06479338842975205,"total":283,"current":65}
+{"_e":"metro:bundling:progress","_t":1782482219609,"id":"1","progress":0.08964107712718275,"total":334,"current":100}
+{"_e":"metro:bundling:progress","_t":1782482219713,"id":"1","progress":0.15357925493060628,"total":370,"current":145}
+{"_e":"metro:bundling:progress","_t":1782482219815,"id":"1","progress":0.18117028270874425,"total":390,"current":166}
+{"_e":"metro:bundling:progress","_t":1782482219916,"id":"1","progress":0.20239511847903455,"total":429,"current":193}
+{"_e":"metro:bundling:progress","_t":1782482220017,"id":"1","progress":0.2409555274862271,"total":493,"current":242}
+{"_e":"metro:bundling:progress","_t":1782482220117,"id":"1","progress":0.270567767950052,"total":496,"current":258}
+{"_e":"metro:bundling:progress","_t":1782482220219,"id":"1","progress":0.270567767950052,"total":558,"current":284}
+{"_e":"metro:bundling:progress","_t":1782482220319,"id":"1","progress":0.270567767950052,"total":592,"current":305}
+{"_e":"metro:bundling:progress","_t":1782482220419,"id":"1","progress":0.30327272373266223,"total":641,"current":353}
+{"_e":"metro:bundling:progress","_t":1782482220641,"id":"1","progress":0.3078998247498445,"total":665,"current":369}
+{"_e":"metro:bundling:progress","_t":1782482220800,"id":"1","progress":0.3095709197806546,"total":665,"current":370}
+{"_e":"metro:bundling:progress","_t":1782482221000,"id":"1","progress":0.3519667800357614,"total":713,"current":423}
+{"_e":"metro:bundling:progress","_t":1782482221005,"id":"1","progress":0.3536328926429424,"total":713,"current":424}
+{"_e":"metro:bundling:progress","_t":1782482221166,"id":"1","progress":0.45979545881028344,"total":730,"current":495}
+{"_e":"metro:bundling:progress","_t":1782482221265,"id":"1","progress":0.5344640702438492,"total":766,"current":560}
+{"_e":"metro:bundling:progress","_t":1782482221366,"id":"1","progress":0.6184755435468802,"total":796,"current":626}
+{"_e":"metro:bundling:progress","_t":1782482221509,"id":"1","progress":0.6783210524285328,"total":805,"current":663}
+{"_e":"metro:bundling:progress","_t":1782482221596,"id":"1","progress":0.6803688129315998,"total":805,"current":664}
+{"_e":"metro:bundling:progress","_t":1782482221721,"id":"1","progress":0.7250471512065688,"total":835,"current":711}
+{"_e":"metro:bundling:progress","_t":1782482221822,"id":"1","progress":0.8097904675686188,"total":859,"current":773}
+{"_e":"metro:bundling:progress","_t":1782482221955,"id":"1","progress":0.8286992002947843,"total":881,"current":802}
+{"_e":"metro:bundling:progress","_t":1782482222020,"id":"1","progress":0.8307670702341394,"total":881,"current":803}
+{"_e":"metro:bundling:progress","_t":1782482222119,"id":"1","progress":0.8741830722516037,"total":892,"current":834}
+{"_e":"metro:bundling:progress","_t":1782482222219,"id":"1","progress":0.8741830722516037,"total":924,"current":863}
+{"_e":"metro:bundling:progress","_t":1782482222321,"id":"1","progress":0.8871011357490536,"total":946,"current":891}
+{"_e":"metro:bundling:progress","_t":1782482222423,"id":"1","progress":0.9408598347971828,"total":966,"current":937}
+{"_e":"metro:bundling:progress","_t":1782482222523,"id":"1","progress":0.9620982324407814,"total":993,"current":974}
+{"_e":"metro:bundling:progress","_t":1782482222623,"id":"1","progress":0.9620982324407814,"total":1041,"current":1012}
+{"_e":"metro:bundling:progress","_t":1782482222723,"id":"1","progress":0.9720293592541163,"total":1065,"current":1050}
+{"_e":"metro:bundling:done","_t":1782482222924,"id":"1","total":1065,"ms":3749.7715}
+{"_e":"metro:client_log","_t":1782482229580,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782482229663,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782482229745,"level":"log","data":["[BackgroundTaskService] Already registered"]}
+{"_e":"root:init","_t":1782729345336,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782729345341,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782729345365,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782729347117,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782729348665,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782729372195,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1782729909903,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1782729909905,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782729909919,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782729910020,"id":"1","progress":0.06805293005671077,"total":46,"current":12}
+{"_e":"metro:bundling:progress","_t":1782729910121,"id":"1","progress":0.06805293005671077,"total":146,"current":14}
+{"_e":"metro:bundling:progress","_t":1782729910223,"id":"1","progress":0.06805293005671077,"total":191,"current":40}
+{"_e":"metro:bundling:progress","_t":1782729910326,"id":"1","progress":0.06805293005671077,"total":281,"current":63}
+{"_e":"metro:bundling:progress","_t":1782729910426,"id":"1","progress":0.0996249597549621,"total":339,"current":107}
+{"_e":"metro:bundling:progress","_t":1782729910526,"id":"1","progress":0.17004995217345092,"total":388,"current":160}
+{"_e":"metro:bundling:progress","_t":1782729910633,"id":"1","progress":0.20230354112240423,"total":458,"current":206}
+{"_e":"metro:bundling:progress","_t":1782729910732,"id":"1","progress":0.21419301960248618,"total":484,"current":224}
+{"_e":"metro:bundling:progress","_t":1782729910837,"id":"1","progress":0.25292110472240553,"total":515,"current":259}
+{"_e":"metro:bundling:progress","_t":1782729910937,"id":"1","progress":0.2642828803808768,"total":568,"current":292}
+{"_e":"metro:bundling:progress","_t":1782729911037,"id":"1","progress":0.281729563317931,"total":601,"current":319}
+{"_e":"metro:bundling:progress","_t":1782729911137,"id":"1","progress":0.302239392646167,"total":633,"current":348}
+{"_e":"metro:bundling:progress","_t":1782729911240,"id":"1","progress":0.3095709197806546,"total":665,"current":370}
+{"_e":"metro:bundling:progress","_t":1782729911411,"id":"1","progress":0.31124653739612185,"total":665,"current":371}
+{"_e":"metro:bundling:progress","_t":1782729911511,"id":"1","progress":0.35502473897674913,"total":673,"current":401}
+{"_e":"metro:bundling:progress","_t":1782729911612,"id":"1","progress":0.3583118428883158,"total":710,"current":425}
+{"_e":"metro:bundling:progress","_t":1782729911713,"id":"1","progress":0.45979545881028344,"total":730,"current":495}
+{"_e":"metro:bundling:progress","_t":1782729911813,"id":"1","progress":0.5465639146694121,"total":771,"current":570}
+{"_e":"metro:bundling:progress","_t":1782729911919,"id":"1","progress":0.6803688129315998,"total":805,"current":664}
+{"_e":"metro:bundling:progress","_t":1782729912020,"id":"1","progress":0.7538325259515571,"total":850,"current":738}
+{"_e":"metro:bundling:progress","_t":1782729912139,"id":"1","progress":0.8328375169584661,"total":881,"current":804}
+{"_e":"metro:bundling:progress","_t":1782729912238,"id":"1","progress":0.8998483193408446,"total":895,"current":849}
+{"_e":"metro:bundling:progress","_t":1782729912347,"id":"1","progress":0.8998483193408446,"total":942,"current":888}
+{"_e":"metro:bundling:progress","_t":1782729912449,"id":"1","progress":0.9633432587361325,"total":973,"current":955}
+{"_e":"metro:bundling:progress","_t":1782729912548,"id":"1","progress":0.9633432587361325,"total":1031,"current":995}
+{"_e":"metro:bundling:progress","_t":1782729912649,"id":"1","progress":0.9720032576742608,"total":1064,"current":1049}
+{"_e":"metro:bundling:done","_t":1782729912852,"id":"1","total":1064,"ms":2948.075}
+{"_e":"metro:client_log","_t":1782729923107,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782729923284,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782729923284,"level":"log","data":["[BackgroundTaskService] Already registered"]}
+{"_e":"metro:client_log","_t":1782729930665,"level":"log","data":["[Notification received]","{\"count\": 6, \"type\": \"overdue\"}"]}
+{"_e":"metro:client_log","_t":1782729930731,"level":"warn","data":["[expo-notifications]: `shouldShowAlert` is deprecated. Specify `shouldShowBanner` and / or `shouldShowList` instead."]}
+{"_e":"root:init","_t":1782730416211,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782730416212,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782730416217,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782730416655,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782730417038,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782730423593,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1782730451576,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1782730451576,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782730451580,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782730451680,"id":"1","progress":0.05488043425106363,"total":286,"current":67}
+{"_e":"metro:bundling:progress","_t":1782730451780,"id":"1","progress":0.24313533946356897,"total":434,"current":214}
+{"_e":"metro:bundling:progress","_t":1782730451880,"id":"1","progress":0.3095709197806546,"total":665,"current":370}
+{"_e":"metro:bundling:progress","_t":1782730451980,"id":"1","progress":0.606903951127436,"total":792,"current":617}
+{"_e":"metro:bundling:progress","_t":1782730452084,"id":"1","progress":0.8910344064831385,"total":892,"current":842}
+{"_e":"metro:bundling:progress","_t":1782730452183,"id":"1","progress":0.9877176190817517,"total":974,"current":968}
+{"_e":"metro:bundling:progress","_t":1782730452283,"id":"1","progress":0.9906933963577634,"total":1072,"current":1067}
+{"_e":"metro:bundling:progress","_t":1782730452384,"id":"1","progress":0.9981369356630468,"total":1073,"current":1072}
+{"_e":"metro:bundling:progress","_t":1782730452603,"id":"1","progress":0.999,"total":1073,"current":1073}
+{"_e":"metro:bundling:done","_t":1782730452676,"id":"1","total":1073,"ms":1099.7112}
+{"_e":"metro:client_log","_t":1782730460378,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782730460437,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782730460706,"level":"log","data":["[BackgroundTaskService] Already registered"]}
+{"_e":"root:init","_t":1782731251355,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782731251356,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782731251361,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782731251899,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782731252411,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782731259169,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1782731312588,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1782731312589,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782731312607,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782731312707,"id":"1","progress":0.08163265306122448,"total":210,"current":60}
+{"_e":"metro:bundling:progress","_t":1782731312808,"id":"1","progress":0.16695571742397966,"total":465,"current":190}
+{"_e":"metro:bundling:progress","_t":1782731312907,"id":"1","progress":0.32580107098198524,"total":671,"current":383}
+{"_e":"metro:bundling:progress","_t":1782731313007,"id":"1","progress":0.6844735928397825,"total":805,"current":666}
+{"_e":"metro:bundling:progress","_t":1782731313108,"id":"1","progress":0.8361537212888563,"total":888,"current":812}
+{"_e":"metro:bundling:progress","_t":1782731313208,"id":"1","progress":0.9601236855369256,"total":993,"current":973}
+{"_e":"metro:bundling:progress","_t":1782731313323,"id":"1","progress":0.999,"total":1073,"current":1073}
+{"_e":"metro:bundling:done","_t":1782731313426,"id":"1","total":1073,"ms":837.5102}
+{"_e":"metro:client_log","_t":1782731320659,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782731320729,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782731320993,"level":"log","data":["[BackgroundTaskService] Already registered"]}
+{"_e":"metro:bundling:started","_t":1782735476618,"id":"4","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1782735476618,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782735476620,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782735476720,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782735476820,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782735476920,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782735477028,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782735477129,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782735477838,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1782735477898,"id":"4","total":1,"ms":1279.6354}
+{"_e":"metro:client_log","_t":1782735484781,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782735484848,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782735485130,"level":"log","data":["[BackgroundTaskService] Already registered"]}
+{"_e":"root:init","_t":1782742676007,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782742676009,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782742676014,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782742676659,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782742677363,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}

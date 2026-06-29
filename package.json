@@ -33,6 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@react-native-community/cli": "latest",
+    "@react-native/metro-config": "^0.85.3",
     "@types/react": "~19.2.14",
     "expo": "^56.0.0",
     "typescript": "~6.0.3"
