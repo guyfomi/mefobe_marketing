@@ -90,4 +90,3 @@ export async function markTaskDone(taskId: number): Promise<boolean> {
 
 export const getOdooTaskUrl = (id: number) =>
   `${ODOO_CONFIG.BASE_URL}/web#model=beauty.task&id=${id}&view_type=form`;
-
