@@ -868,3 +868,95 @@
 {"_e":"metro:client_log","_t":1782754858607,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
 {"_e":"metro:client_log","_t":1782754858666,"level":"log","data":["[BackgroundTaskService] Already registered"]}
 {"_e":"metro:client_log","_t":1782754894168,"level":"warn","data":["[AiService] fetchModels failed, using defaults:","[AxiosError: Request failed with status code 405]"]}
+{"_e":"root:init","_t":1782815448713,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782815448714,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782815448718,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782815449254,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782815449767,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782815456674,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:client_log","_t":1782815534944,"level":"error","data":["Your app just crashed. See the error below.\njava.lang.RuntimeException: Unable to start activity ComponentInfo{cm.mefobemarketing/cm.mefobemarketing.MainActivity}: java.lang.IllegalArgumentException: App react context shouldn't be created before.\n  android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4710)\n  android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4941)\n  android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:222)\n  android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)\n  android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)\n  android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)\n  android.app.ActivityThread$H.handleMessage(ActivityThread.java:3150)\n  android.os.Handler.dispatchMessage(Handler.java:110)\n  android.os.Looper.loopOnce(Looper.java:273)\n  android.os.Looper.loop(Looper.java:363)\n  android.app.ActivityThread.main(ActivityThread.java:10060)\n  java.lang.reflect.Method.invoke(Native Method)\n  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)\n  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)\nCaused by java.lang.IllegalArgumentException: App react context shouldn't be created before.\n  expo.modules.devlauncher.launcher.loaders.DevLauncherAppLoader.createOnDelegateWillBeCreatedListener$lambda$1(DevLauncherAppLoader.kt:49)\n  expo.modules.devlauncher.launcher.loaders.DevLauncherAppLoader.$r8$lambda$qJDs5uQrozfB3coXC15_j-4Po8g(DevLauncherAppLoader.kt:0)\n  expo.modules.devlauncher.launcher.loaders.DevLauncherAppLoader$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)\n  expo.modules.devlauncher.launcher.DevLauncherLifecycle.delegateWillBeCreated(DevLauncherLifecycle.kt:16)\n  expo.modules.devlauncher.DevLauncherController$Companion.wrapReactActivityDelegate(DevLauncherController.kt:528)\n  expo.modules.devlauncher.DevLauncherPackageDelegate$createReactActivityHandlers$1.onDidCreateReactActivityDelegate(DevLauncherPackageDelegate.kt:72)\n  expo.modules.ReactActivityDelegateWrapper.onCreate$lambda$6(ReactActivityDelegateWrapper.kt:121)\n  expo.modules.ReactActivityDelegateWrapper.$r8$lambda$6Bl75txsUT2aYxhkWG0nYkUoMJY(ReactActivityDelegateWrapper.kt:0)\n  expo.modules.ReactActivityDelegateWrapper$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)\n  kotlin.sequences.TransformingSequence$iterator$1.next(Sequences.kt:243)\n  kotlin.sequences.FilteringSequence$iterator$1.calcNext(Sequences.kt:203)\n  kotlin.sequences.FilteringSequence$iterator$1.hasNext(Sequences.kt:227)\n  kotlin.sequences.SequencesKt___SequencesKt.firstOrNull(_Sequences.kt:172)\n  expo.modules.ReactActivityDelegateWrapper.onCreate(ReactActivityDelegateWrapper.kt:122)\n  com.facebook.react.ReactActivity.onCreate(ReactActivity.java:61)\n  cm.mefobemarketing.MainActivity.onCreate(MainActivity.kt:19)\n  android.app.Activity.performCreate(Activity.java:9519)\n  android.app.Activity.performCreate(Activity.java:9488)\n  android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1524)\n  android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4692)\n  android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4941)\n  android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:222)\n  android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)\n  android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)\n  android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)\n  android.app.ActivityThread$H.handleMessage(ActivityThread.java:3150)\n  android.os.Handler.dispatchMessage(Handler.java:110)\n  android.os.Looper.loopOnce(Looper.java:273)\n  android.os.Looper.loop(Looper.java:363)\n  android.app.ActivityThread.main(ActivityThread.java:10060)\n  java.lang.reflect.Method.invoke(Native Method)\n  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)\n  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)"]}
+{"_e":"metro:bundling:started","_t":1782815545030,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1782815545030,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782815545035,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782815545141,"id":"1","progress":0.03376798889619403,"total":234,"current":43}
+{"_e":"metro:bundling:progress","_t":1782815545242,"id":"1","progress":0.20409134948096888,"total":425,"current":192}
+{"_e":"metro:bundling:progress","_t":1782815545342,"id":"1","progress":0.3117918354906953,"total":668,"current":373}
+{"_e":"metro:bundling:progress","_t":1782815545442,"id":"1","progress":0.705102923580059,"total":811,"current":681}
+{"_e":"metro:bundling:progress","_t":1782815545542,"id":"1","progress":0.8236876305177058,"total":898,"current":815}
+{"_e":"metro:bundling:progress","_t":1782815545642,"id":"1","progress":0.9538524428833138,"total":1028,"current":1004}
+{"_e":"metro:bundling:done","_t":1782815545761,"id":"1","total":1028,"ms":731.1276}
+{"_e":"root:init","_t":1782816247994,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782816247995,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782816247999,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782816248429,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782816248814,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782816255261,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1782816320537,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1782816320538,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782816320542,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782816320641,"id":"1","progress":0.11900993497454283,"total":229,"current":79}
+{"_e":"metro:bundling:progress","_t":1782816320741,"id":"1","progress":0.20512367420211164,"total":499,"current":226}
+{"_e":"metro:bundling:progress","_t":1782816320841,"id":"1","progress":0.43888315058287575,"total":717,"current":475}
+{"_e":"metro:bundling:progress","_t":1782816320941,"id":"1","progress":0.8298461249765434,"total":876,"current":798}
+{"_e":"metro:bundling:progress","_t":1782816321044,"id":"1","progress":0.983706993530472,"total":978,"current":970}
+{"_e":"metro:bundling:progress","_t":1782816321154,"id":"1","progress":0.999,"total":1076,"current":1076}
+{"_e":"metro:bundling:done","_t":1782816321253,"id":"1","total":1076,"ms":715.8159}
+{"_e":"metro:client_log","_t":1782816327149,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782816327210,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782816327450,"level":"log","data":["[BackgroundTaskService] Already registered"]}
+{"_e":"metro:client_log","_t":1782816346720,"level":"log","data":["[Notification received]","{\"count\": 6, \"type\": \"overdue\"}"]}
+{"_e":"metro:client_log","_t":1782816346874,"level":"warn","data":["[expo-notifications]: `shouldShowAlert` is deprecated. Specify `shouldShowBanner` and / or `shouldShowList` instead."]}
+{"_e":"metro:client_log","_t":1782816346875,"level":"log","data":["[Notification received]","{\"count\": 6, \"type\": \"overdue\"}"]}
+{"_e":"metro:client_log","_t":1782816346875,"level":"warn","data":["[expo-notifications]: `shouldShowAlert` is deprecated. Specify `shouldShowBanner` and / or `shouldShowList` instead."]}
+{"_e":"metro:client_log","_t":1782816403837,"level":"warn","data":["[AiService] fetchModels failed, using defaults:","[AxiosError: Request failed with status code 405]"]}
+{"_e":"metro:client_log","_t":1782817289130,"level":"warn","data":["[AiService] fetchModels failed, using defaults:","[AxiosError: Request failed with status code 405]"]}
+{"_e":"metro:client_log","_t":1782817866041,"level":"warn","data":["[AiService] fetchModels failed, using defaults:","[AxiosError: Request failed with status code 405]"]}
+{"_e":"metro:server_log","_t":1782819567994,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","cm.mefobemarketing","SM-A155F - 16 - API 36","60"]}
+{"_e":"metro:server_log","_t":1782819830847,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","cm.mefobemarketing","SM-A155F - 16 - API 36","60"]}
+{"_e":"root:init","_t":1782822113929,"format":"v0-jsonl","version":"56.1.16"}
+{"_e":"env:mode","_t":1782822113931,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1782822113945,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1782822115542,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1782822117359,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1782822155877,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1782825054448,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1782825054449,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782825054464,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1782825054568,"id":"1","progress":0.0022249911000356,"total":106,"current":5}
+{"_e":"metro:bundling:progress","_t":1782825054671,"id":"1","progress":0.03305785123966942,"total":187,"current":34}
+{"_e":"metro:bundling:progress","_t":1782825054771,"id":"1","progress":0.1252519094311504,"total":243,"current":86}
+{"_e":"metro:bundling:progress","_t":1782825054871,"id":"1","progress":0.18960401843284727,"total":333,"current":145}
+{"_e":"metro:bundling:progress","_t":1782825054971,"id":"1","progress":0.20145484045429962,"total":430,"current":193}
+{"_e":"metro:bundling:progress","_t":1782825055071,"id":"1","progress":0.23696689213243147,"total":530,"current":258}
+{"_e":"metro:bundling:progress","_t":1782825055171,"id":"1","progress":0.26581894585650373,"total":642,"current":331}
+{"_e":"metro:bundling:progress","_t":1782825055282,"id":"1","progress":0.31713800617756865,"total":673,"current":379}
+{"_e":"metro:bundling:progress","_t":1782825055381,"id":"1","progress":0.37345679012345684,"total":702,"current":429}
+{"_e":"metro:bundling:progress","_t":1782825055481,"id":"1","progress":0.4969094329481322,"total":732,"current":516}
+{"_e":"metro:bundling:progress","_t":1782825055581,"id":"1","progress":0.6391503485835321,"total":753,"current":602}
+{"_e":"metro:bundling:progress","_t":1782825055681,"id":"1","progress":0.6573020846279132,"total":782,"current":634}
+{"_e":"metro:bundling:progress","_t":1782825055782,"id":"1","progress":0.6573020846279132,"total":797,"current":638}
+{"_e":"metro:bundling:progress","_t":1782825055882,"id":"1","progress":0.728122141785379,"total":818,"current":698}
+{"_e":"metro:bundling:progress","_t":1782825055982,"id":"1","progress":0.8136944079783729,"total":878,"current":792}
+{"_e":"metro:bundling:progress","_t":1782825056083,"id":"1","progress":0.8232742826135531,"total":885,"current":803}
+{"_e":"metro:bundling:progress","_t":1782825056193,"id":"1","progress":0.8765416762189139,"total":941,"current":881}
+{"_e":"metro:bundling:progress","_t":1782825056293,"id":"1","progress":0.9286314293447375,"total":963,"current":928}
+{"_e":"metro:bundling:progress","_t":1782825056400,"id":"1","progress":0.941100010628122,"total":970,"current":941}
+{"_e":"metro:bundling:progress","_t":1782825056511,"id":"1","progress":0.9816611124439383,"total":977,"current":968}
+{"_e":"metro:bundling:progress","_t":1782825056646,"id":"1","progress":0.9816611124439383,"total":1021,"current":990}
+{"_e":"metro:bundling:progress","_t":1782825056750,"id":"1","progress":0.9816611124439383,"total":1052,"current":1024}
+{"_e":"metro:bundling:progress","_t":1782825056862,"id":"1","progress":0.9816611124439383,"total":1067,"current":1051}
+{"_e":"metro:bundling:progress","_t":1782825056965,"id":"1","progress":0.9981421276654552,"total":1076,"current":1075}
+{"_e":"metro:bundling:progress","_t":1782825057232,"id":"1","progress":0.999,"total":1076,"current":1076}
+{"_e":"metro:bundling:done","_t":1782825057393,"id":"1","total":1076,"ms":2944.7885}
+{"_e":"metro:client_log","_t":1782825066066,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782825066135,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782825066408,"level":"log","data":["[BackgroundTaskService] Already registered"]}
+{"_e":"metro:client_log","_t":1782825096772,"level":"error","data":["Erreur authentification, veuillez verifier votre connexion et vos parametres:","[AxiosError: Network Error]"]}
+{"_e":"metro:client_log","_t":1782825096934,"level":"error","data":["Erreur authentification, veuillez verifier votre connexion et vos parametres:","[AxiosError: Network Error]"]}
+{"_e":"metro:client_log","_t":1782825097180,"level":"error","data":["Erreur authentification, veuillez verifier votre connexion et vos parametres:","[AxiosError: Network Error]"]}
+{"_e":"metro:client_log","_t":1782825103898,"level":"error","data":["Erreur authentification, veuillez verifier votre connexion et vos parametres:","[AxiosError: Network Error]"]}
+{"_e":"metro:client_log","_t":1782825127539,"level":"error","data":["Erreur authentification, veuillez verifier votre connexion et vos parametres:","[AxiosError: Network Error]"]}
+{"_e":"metro:client_log","_t":1782827879683,"level":"error","data":["[ReferenceError: Property 'TextInpu' doesn't exist]"]}
+{"_e":"metro:client_log","_t":1782827888862,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782827888980,"level":"error","data":["expo-notifications: Custom sound 'default' not found in native app. Make sure the sound file (e.g. 'custom_sound.wav') is included in the expo-notifications config plugin sounds array in app config."]}
+{"_e":"metro:client_log","_t":1782827888980,"level":"log","data":["[BackgroundTaskService] Already registered"]}

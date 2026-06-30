@@ -4,9 +4,10 @@ import { Platform } from 'react-native';
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
-    shouldShowAlert: true,
     shouldPlaySound: false,
-    shouldSetBadge:  true,
+    shouldSetBadge: false,
+    shouldShowBanner: true,
+    shouldShowList: true,
   }),
 });
 
@@ -30,7 +31,7 @@ export async function registerForPushNotifications(): Promise<string | null> {
     });
     await Notifications.setNotificationChannelAsync('beauty_done', {
       name: 'Tâches Terminées',
-      importance: Notifications.AndroidImportance.DEFAULT,
+      importance: Notifications.AndroidImportance.DEFAULT,      
     });
   }
 
@@ -42,7 +43,7 @@ export async function registerForPushNotifications(): Promise<string | null> {
 
 export async function showLocalNotification(title, body, data?) {
   await Notifications.scheduleNotificationAsync({
-    content: { title, body, data: data ?? {}, sound: 'default' },
+    content: { title, body, data: data ?? {}},
     trigger: null,
   });
 }

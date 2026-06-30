@@ -55,14 +55,14 @@ export default function AiSettingsScreen({ navigation }: any) {
       const r = resp.data?.result;
       if (r?.success) {
         setTestStatus('ok');
-        setTestMsg('Contrôleur Odoo opérationnel ✅\nMessage généré avec succès.');
+        setTestMsg('✅Message généré avec succès.');
       } else {
         setTestStatus('error');
         setTestMsg(r?.error ?? 'Erreur inconnue');
       }
     } catch (e: any) {
       setTestStatus('error');
-      setTestMsg(e.message ?? 'Impossible de contacter le serveur Odoo.');
+      setTestMsg(e.message ?? 'Impossible de contacter le serveur.');
     } finally {
       setTesting(false);
     }
@@ -86,7 +86,7 @@ export default function AiSettingsScreen({ navigation }: any) {
         showsVerticalScrollIndicator={false}>
 
         {/* Security architecture */}
-        <View style={[s.card, { backgroundColor: '#E8F5E9', borderColor: '#C8E6C9' }]}>
+        {/* <View style={[s.card, { backgroundColor: '#E8F5E9', borderColor: '#C8E6C9' }]}>
           <Text style={[s.cardTitle, { color: '#2E7D32' }]}>🔒 Architecture Sécurisée</Text>
           <Text style={s.greenTxt}>
             La clé API OpenRouter est stockée <Text style={{ fontWeight: '900' }}>uniquement dans Odoo</Text>.{'\n'}
@@ -98,10 +98,10 @@ export default function AiSettingsScreen({ navigation }: any) {
               <View key={t} style={s.tag}><Text style={s.tagTxt}>{t}</Text></View>
             ))}
           </View>
-        </View>
+        </View> */}
 
         {/* Where to configure the key in Odoo */}
-        <View style={s.card}>
+        {/* <View style={s.card}>
           <Text style={s.cardTitle}>📋 Clé API dans Odoo</Text>
           <Text style={s.info}>
             La clé OpenRouter se configure côté serveur Odoo :{'\n'}
@@ -114,7 +114,7 @@ export default function AiSettingsScreen({ navigation }: any) {
             <Ionicons name="open-outline" size={14} color="#fff" />
             <Text style={s.linkTxt}>Obtenir une clé gratuite sur openrouter.ai</Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
 
         {/* Salon name (stored locally in app) */}
         <View style={s.card}>
@@ -130,7 +130,7 @@ export default function AiSettingsScreen({ navigation }: any) {
         </View>
 
         {/* Test Odoo controller */}
-        <View style={s.card}>
+        {/* <View style={s.card}>
           <Text style={s.cardTitle}>🧪 Tester le Contrôleur Odoo</Text>
           <Text style={s.sublabel}>
             Vérifie que POST /beauty/ai/generate répond correctement
@@ -168,10 +168,10 @@ export default function AiSettingsScreen({ navigation }: any) {
               </Text>
             </View>
           )}
-        </View>
+        </View> */}
 
         {/* Available models (from Odoo) */}
-        <View style={s.card}>
+        {/* <View style={s.card}>
           <Text style={s.cardTitle}>🤖 Modèles Disponibles</Text>
           <Text style={s.sublabel}>Chargés depuis /beauty/ai/models · Tous gratuits</Text>
           {models.map(m => (
@@ -183,7 +183,7 @@ export default function AiSettingsScreen({ navigation }: any) {
               </View>
             </View>
           ))}
-        </View>
+        </View> */}
 
         {/* Save button */}
         <TouchableOpacity

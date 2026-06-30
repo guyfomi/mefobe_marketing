@@ -5,9 +5,9 @@ export const CHANNELS = [
   { key: 'whatsapp',  emoji: '💬', label: 'WhatsApp',   color: '#25D366', bg: '#E8F5E9' },
   { key: 'sms',       emoji: '📱', label: 'SMS',         color: '#607D8B', bg: '#ECEFF1' },
   { key: 'email',     emoji: '📧', label: 'Email',       color: '#1976D2', bg: '#E3F2FD' },
-  { key: 'facebook',  emoji: '📘', label: 'Facebook',    color: '#1877F2', bg: '#E8F0FE' },
+  { key: 'facebook',  emoji: '📘', label: 'Facebook',    color: '#0a07e2', bg: '#f3f3f5' },
   { key: 'instagram', emoji: '📸', label: 'Instagram',   color: '#E91E8C', bg: '#FCE4EC' },
-  { key: 'tiktok',    emoji: '🎵', label: 'TikTok',      color: '#111',    bg: '#F3E5F5' },
+  { key: 'tiktok',    emoji: '🎵', label: 'TikTok',      color: '#0c0b0b',    bg: '#F3E5F5' },
   { key: 'linkedin',  emoji: '💼', label: 'LinkedIn',    color: '#0A66C2', bg: '#E3F2FD' },
 ];
 
@@ -17,11 +17,12 @@ export const LANGUAGES = [
   { key: 'both', label: '🇨🇲 Français + English' },
 ];
 
-export const TONES = [
-  { key: 'warm',   label: '😊 Chaleureux'     },
-  { key: 'promo',  label: '🔥 Promotionnel'   },
-  { key: 'luxury', label: '✨ Luxe & Élégant'  },
-  { key: 'urgent', label: '⚡ Urgent'          },
+export const TONES = [  
+  { key: 'promo',  label: '🔥Promo'   },
+  { key: 'luxury', label: '✨Luxe'  },
+  { key: 'elegant', label: '✨Elegant'  },
+  { key: 'urgent', label: '⚡Urgent'          },
+  { key: 'warm',   label: '😊Chaleureux'     },
 ];
 
 export const TASK_TYPE_LABELS: Record<string, string> = {
@@ -118,7 +119,7 @@ export async function generateAiMessage(params: {
       channel:       params.channel,
       language:      params.language,
       tone:          params.tone,
-      model:         params.model,
+      model:         'free',
       extra_context: params.extraContext,
       task_id:       params.taskId ?? null,
     },

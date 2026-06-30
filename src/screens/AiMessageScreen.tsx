@@ -37,23 +37,13 @@ export default function AiMessageScreen({ route, navigation }: any) {
   const [tone,         setTone]         = useState('warm');
   const [model,        setModel]        = useState(DEFAULT_MODELS[0].id);
 
-  // ── UI state ──────────────────────────────────────────────
-  const [models,       setModels]       = useState<AiModel[]>(DEFAULT_MODELS);
+  // ── UI state ──────────────────────────────────────────────  
   const [generatedMsg, setGeneratedMsg] = useState('');
-  const [loading,      setLoading]      = useState(false);
-  const [loadingModels,setLoadingModels]= useState(true);
+  const [loading,      setLoading]      = useState(false);  
   const [copied,       setCopied]       = useState(false);
   const [sent,         setSent]         = useState(false);
   const [savedOdoo,    setSavedOdoo]    = useState(false);
   const [showTT,       setShowTT]       = useState(false);
-  const [showModel,    setShowModel]    = useState(false);
-
-  // ── Load available models from Odoo on mount ──────────────
-  useEffect(() => {
-    fetchModels()
-      .then(m => { setModels(m); setModel(m[0]?.id ?? DEFAULT_MODELS[0].id); })
-      .finally(() => setLoadingModels(false));
-  }, []);
 
   // ── Auto-select channel when task type changes ────────────
   useEffect(() => {
@@ -84,7 +74,7 @@ export default function AiMessageScreen({ route, navigation }: any) {
     } catch (e: any) {
       Alert.alert(
         '❌ Erreur de génération',
-        e.message ?? 'Une erreur est survenue. Vérifiez la configuration Odoo.',
+        e.message ?? 'Une erreur est survenue. Vérifiez la configuration.',
         [{ text: 'OK' }]
       );
     } finally {
@@ -138,10 +128,10 @@ export default function AiMessageScreen({ route, navigation }: any) {
             <Text style={s.headerTitle}>✨ Générateur IA</Text>
             <Text style={s.headerSub}>
               {loading
-                ? '⏳ Odoo → OpenRouter...'
+                ? '⏳ BeautyFlow ...'
                 : generatedMsg
                 ? '✅ Message prêt à envoyer'
-                : 'Via contrôleur Odoo · Clé sécurisée 🔒'}
+                : ' 🔒'}
             </Text>
           </View>
           <TouchableOpacity
@@ -239,7 +229,7 @@ export default function AiMessageScreen({ route, navigation }: any) {
                   ]}
                 >
                   <Text style={[s.chipTxt, channel === c.key && { color: '#fff' }]}>
-                    {c.emoji} {c.label}
+                    {c.label} 
                   </Text>
                 </TouchableOpacity>
               ))}
@@ -279,45 +269,7 @@ export default function AiMessageScreen({ route, navigation }: any) {
                 </Text>
               </TouchableOpacity>
             ))}
-          </View>
-
-          {/* AI Model */}
-          <Text style={s.label}>Modèle IA</Text>
-          {loadingModels ? (
-            <View style={[s.picker, { justifyContent: 'center' }]}>
-              <ActivityIndicator size="small" color={COLORS.primary} />
-            </View>
-          ) : (
-            <TouchableOpacity style={s.picker} onPress={() => setShowModel(!showModel)}>
-              <Text style={[s.pickerTxt, { flex: 1 }]} numberOfLines={1}>
-                {models.find(m => m.id === model)?.label ?? model}
-              </Text>
-              <Ionicons
-                name={showModel ? 'chevron-up' : 'chevron-down'}
-                size={18} color="#888"
-              />
-            </TouchableOpacity>
-          )}
-
-          {showModel && (
-            <View style={s.dropdown}>
-              {models.map(m => (
-                <TouchableOpacity
-                  key={m.id}
-                  style={[s.dropItem, model === m.id && s.dropItemActive]}
-                  onPress={() => { setModel(m.id); setShowModel(false); }}
-                >
-                  <Text style={[s.dropTxt, model === m.id && s.dropTxtActive]}>
-                    {m.label}
-                  </Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          )}
-
-          <Text style={s.securityNote}>
-            🔒 La clé API n'est pas dans l'app · Odoo appelle OpenRouter
-          </Text>
+          </View>                              
         </View>
 
         {/* ── 3. Generate button ─────────────────────────── */}
@@ -335,7 +287,7 @@ export default function AiMessageScreen({ route, navigation }: any) {
             {loading ? (
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
                 <ActivityIndicator color="#fff" size="small" />
-                <Text style={s.generateTxt}>Génération via Odoo...</Text>
+                <Text style={s.generateTxt}>Génération ...</Text>
               </View>
             ) : (
               <Text style={s.generateTxt}>
@@ -348,6 +300,11 @@ export default function AiMessageScreen({ route, navigation }: any) {
         {/* ── 4. Result card ────────────────────────────── */}
         {generatedMsg !== '' && (
           <View style={s.card}>
+
+            {/* Message text (selectable) */}
+            <ScrollView style={s.msgBox} nestedScrollEnabled>
+              <TextInput style={s.msgTxt} value={generatedMsg} editable={true} multiline={true} textAlignVertical="top" onChangeText={setGeneratedMsg}/>
+            </ScrollView>
 
             {/* Channel badge + meta */}
             <View style={s.resultHeader}>
@@ -363,15 +320,10 @@ export default function AiMessageScreen({ route, navigation }: any) {
               </Text>
               {savedOdoo && (
                 <View style={s.savedBadge}>
-                  <Text style={s.savedBadgeTxt}>💾 Odoo</Text>
+                  <Text style={s.savedBadgeTxt}>💾</Text>
                 </View>
-              )}
-            </View>
-
-            {/* Message text (selectable) */}
-            <ScrollView style={s.msgBox} nestedScrollEnabled>
-              <Text style={s.msgTxt} selectable>{generatedMsg}</Text>
-            </ScrollView>
+              )} 
+            </View>            
 
             {/* Action row: Regenerate · Copy · Save to Odoo */}
             <View style={s.actionRow}>
